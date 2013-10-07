@@ -44,6 +44,7 @@
         <!--  Header Ends -->
         <!-- Footer Start -->
         <LinearLayout android:id="@+id/footer"
+            android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="90dip"
                 android:layout_alignParentBottom="true">
