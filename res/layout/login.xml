@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent"
+    android:fillViewport="true" >
+
+  <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="#ffffff">
+ 
+        <!--  Header  Starts-->
+        <LinearLayout android:id="@+id/header"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dip"
+                android:paddingBottom="5dip"
+                     android:orientation="vertical"
+                >
+                <!-- Logo Start-->
+                <ImageView android:src="@drawable/timbylogo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|center"
+                            android:id="@+id/logo"
+                            />
+  <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"                
+                android:text="@string/app_name"
+                android:gravity="center"
+                android:textSize="24dip"
+                android:textColor="#333333"/>          
+                 <TextView 
+                android:id="@+id/status"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"                
+                android:text="             "
+                android:gravity="center"
+                android:textSize="18dip"
+                android:textColor="#555555"/>         
+                <!-- Logo Ends -->
+        </LinearLayout>
+        <!--  Header Ends -->
+        <!-- Footer Start -->
+        <LinearLayout android:id="@+id/footer"
+                android:layout_width="fill_parent"
+                android:layout_height="90dip"
+                android:layout_alignParentBottom="true">
+        </LinearLayout>
+        <!-- Footer Ends -->
+ 
+        <!-- Login Form -->
+        <LinearLayout
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="10dip"
+          android:layout_below="@id/header">
+          <!--  Email Label -->          
+          <EditText android:layout_width="fill_parent"
+              	android:id="@+id/login_username"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="20dip"
+                android:singleLine="true"
+                android:hint="username"
+                />
+          <!--  Password Label -->          
+          <EditText android:layout_width="fill_parent"
+                android:id="@+id/login_password"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"
+                android:hint="password"
+                android:password="true"/>
+          <!-- Login button -->
+          <Button android:id="@+id/btnLogin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="Login"/>
+          
+             <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+              android:gravity="center"
+                     android:orientation="horizontal"
+                >
+                  <!-- Link to Registration Screen -->
+
+          <TextView
+              android:id="@+id/link_to_skip"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:paddingBottom="20dp"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              android:paddingTop="20dp"
+              android:text="Skip to Tutorials"
+              android:textColor="#0b84aa"
+              android:textSize="20dip" />
+          
+          <!-- Link to Registration Screen -->
+
+          <TextView
+              android:id="@+id/link_to_register"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:paddingBottom="20dp"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              android:paddingTop="20dp"
+              android:text="Register"
+              android:textColor="#0b84aa"
+              android:textSize="20dip" />
+
+ </LinearLayout>
+        </LinearLayout>
+        <!-- Login Form Ends -->
+  </RelativeLayout>
+</ScrollView>
