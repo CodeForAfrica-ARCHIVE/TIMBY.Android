@@ -8,6 +8,7 @@
     <string name="title_lessons">Lessons</string>
 
     <string name="action_publish">Publish</string>
+    <string name="action_settings">Settings</string>
     <!-- menus -->
     <string name="menu_new_project">New</string>
     <string name="menu_projects">Stories</string>
